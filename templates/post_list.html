@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% block body %}
+<div class="container mt-5">
+  <h1>文章列表</h1>
+  <div class="row">
+    {% for post in object_list %}
+
+    <div class="col-md-6">
+      <div class="card my-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text text-muted">
+            {{ post.content }}
+          </p>
+          <a href="/{{ post.id }}" class="card-link">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

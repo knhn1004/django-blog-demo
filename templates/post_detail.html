@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% block body %}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">文章列表</a></li>
+    <li class="breadcrumb-item active" aria-current="page">
+      {{ post.title }}
+    </li>
+  </ol>
+</nav>
+<div class="container mt-2">
+  <h1>{{ post.title }}</h1>
+  <hr />
+  <p>{{ post.content }}</p>
+</div>
+{% endblock %}
