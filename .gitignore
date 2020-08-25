@@ -1,2 +1,4 @@
 db.sqlite
 tags
+
+.DS_Store
